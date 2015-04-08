@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_x"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gmail.spaskhristov.ac.MainActivity" >
+
+    <NumberPicker
+        android:id="@+id/tempPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempPicker"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/strHome"
+        android:src="@drawable/home" />
+
+    <RadioGroup
+        android:id="@+id/radioFanSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHome"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="22dp"
+        android:title="@string/strFan1" >
+
+        <RadioButton
+            android:id="@+id/radioFan4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/strFan4" />
+
+        <RadioButton
+            android:id="@+id/radioFan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/strFan3" />
+
+        <RadioButton
+            android:id="@+id/radioFan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/strFan2" />
+
+        <RadioButton
+            android:id="@+id/radioFan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/strFan1" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgHome"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="22dp" >
+
+        <RadioButton
+            android:id="@+id/radioModeAuto"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:button="@drawable/button_mode_auto"
+            android:checked="false"
+            android:text="@string/strModeAuto" />
+
+        <RadioButton
+            android:id="@+id/radioModeCool"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:button="@drawable/button_mode_cool"
+            android:checked="false"
+            android:text="@string/strModeCool" />
+
+        <RadioButton
+            android:id="@+id/radioModeDry"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:button="@drawable/button_mode_dry"
+            android:checked="false"
+            android:text="@string/strModeDry" />
+
+        <RadioButton
+            android:id="@+id/radioModeHeat"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:button="@drawable/button_mode_heat"
+            android:checked="false"
+            android:text="@string/strModeHeat" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioMode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/off" />
+
+    <TextView
+        android:id="@+id/txtTempHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgHome"
+        android:layout_alignTop="@+id/imgHome"
+        android:layout_toRightOf="@+id/imgHome"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

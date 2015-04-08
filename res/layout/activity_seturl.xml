@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/bg_x"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gmail.spaskhristov.ac.MainActivity" >
+
+    <Button
+        android:id="@+id/btnSetURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="179dp"
+        android:text="@string/setUrlStr" />
+
+    <EditText
+        android:id="@+id/editTxtSetUrl"
+        android:inputType="textUri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSetURL"
+        android:layout_alignLeft="@+id/btnSetURL"
+        android:layout_alignRight="@+id/btnSetURL"
+        android:layout_marginBottom="27dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTxtSetUrl"
+        android:layout_alignLeft="@+id/editTxtSetUrl"
+        android:layout_alignRight="@+id/editTxtSetUrl"
+        android:layout_marginBottom="27dp"
+        android:textSize="24sp"
+        android:text="@string/urlStr" />
+
+</RelativeLayout>

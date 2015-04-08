@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="urlStr">http://46.55.133.25:82/</string>
+    <string name="tempHomeStr">Temperature home: </string>
+    <string name="enterMsgStr">Message: </string>
+    <string name="enterUrlStr">URL: </string>
+    <string name="exitApp_label">Exit</string>
+    
+    <string name="strOff">Off</string>
+     <string name="strOn">On</string>
+     
+    <string name="strHome">Home</string>
+     <string name="strMode">Mode</string>
+    <string name="strModeAuto">&#160;&#160;Auto</string>
+   <string name="strModeCool">Cool</string>
+   <string name="strModeDry">&#160;&#160;Dry</string>
+   <string name="strModeHeat">&#160;&#160;Heat</string>
+   
+   <string name="strFanSpeed">Fan Speed</string>
+	<string name="strFan1">1</string>
+   <string name="strFan2">2</string>
+   <string name="strFan3">3</string>
+   <string name="strFan4">4</string>
+   
+   <string name="setUrlStr">SET URL</string>
+   <string name="strDescriptionBg">background images</string>
+</resources>
